@@ -1,0 +1,30 @@
+D:\seif\BackEnd\Project.PL\Project.BL\bin\Debug\net6.0\Project.BL.deps.json
+D:\seif\BackEnd\Project.PL\Project.BL\bin\Debug\net6.0\Project.BL.dll
+D:\seif\BackEnd\Project.PL\Project.BL\bin\Debug\net6.0\Project.BL.pdb
+D:\seif\BackEnd\Project.PL\Project.BL\obj\Debug\net6.0\Project.BL.GeneratedMSBuildEditorConfig.editorconfig
+D:\seif\BackEnd\Project.PL\Project.BL\obj\Debug\net6.0\Project.BL.AssemblyInfoInputs.cache
+D:\seif\BackEnd\Project.PL\Project.BL\obj\Debug\net6.0\Project.BL.AssemblyInfo.cs
+D:\seif\BackEnd\Project.PL\Project.BL\obj\Debug\net6.0\Project.BL.csproj.CoreCompileInputs.cache
+D:\seif\BackEnd\Project.PL\Project.BL\obj\Debug\net6.0\Project.BL.dll
+D:\seif\BackEnd\Project.PL\Project.BL\obj\Debug\net6.0\refint\Project.BL.dll
+D:\seif\BackEnd\Project.PL\Project.BL\obj\Debug\net6.0\Project.BL.pdb
+D:\seif\BackEnd\Project.PL\Project.BL\obj\Debug\net6.0\ref\Project.BL.dll
+D:\seif\BackEnd\Project.PL\Project.BL\obj\Debug\net6.0\Project.BL.csproj.AssemblyReference.cache
+D:\seif\BackEnd\Project.PL\Project.BL\bin\Debug\net6.0\Project.DAL.dll
+D:\seif\BackEnd\Project.PL\Project.BL\bin\Debug\net6.0\Project.DAL.pdb
+D:\seif\BackEnd\Project.PL\Project.BL\obj\Debug\net6.0\Project.BL.csproj.CopyComplete
+D:\Authorization & Authentication Structure Project\Authorization & Authentication Structure Project\Project.BL\bin\Debug\net6.0\Project.BL.deps.json
+D:\Authorization & Authentication Structure Project\Authorization & Authentication Structure Project\Project.BL\bin\Debug\net6.0\Project.BL.dll
+D:\Authorization & Authentication Structure Project\Authorization & Authentication Structure Project\Project.BL\bin\Debug\net6.0\Project.BL.pdb
+D:\Authorization & Authentication Structure Project\Authorization & Authentication Structure Project\Project.BL\bin\Debug\net6.0\Project.DAL.dll
+D:\Authorization & Authentication Structure Project\Authorization & Authentication Structure Project\Project.BL\bin\Debug\net6.0\Project.DAL.pdb
+D:\Authorization & Authentication Structure Project\Authorization & Authentication Structure Project\Project.BL\obj\Debug\net6.0\Project.BL.csproj.AssemblyReference.cache
+D:\Authorization & Authentication Structure Project\Authorization & Authentication Structure Project\Project.BL\obj\Debug\net6.0\Project.BL.GeneratedMSBuildEditorConfig.editorconfig
+D:\Authorization & Authentication Structure Project\Authorization & Authentication Structure Project\Project.BL\obj\Debug\net6.0\Project.BL.AssemblyInfoInputs.cache
+D:\Authorization & Authentication Structure Project\Authorization & Authentication Structure Project\Project.BL\obj\Debug\net6.0\Project.BL.AssemblyInfo.cs
+D:\Authorization & Authentication Structure Project\Authorization & Authentication Structure Project\Project.BL\obj\Debug\net6.0\Project.BL.csproj.CoreCompileInputs.cache
+D:\Authorization & Authentication Structure Project\Authorization & Authentication Structure Project\Project.BL\obj\Debug\net6.0\Project.BL.csproj.CopyComplete
+D:\Authorization & Authentication Structure Project\Authorization & Authentication Structure Project\Project.BL\obj\Debug\net6.0\Project.BL.dll
+D:\Authorization & Authentication Structure Project\Authorization & Authentication Structure Project\Project.BL\obj\Debug\net6.0\refint\Project.BL.dll
+D:\Authorization & Authentication Structure Project\Authorization & Authentication Structure Project\Project.BL\obj\Debug\net6.0\Project.BL.pdb
+D:\Authorization & Authentication Structure Project\Authorization & Authentication Structure Project\Project.BL\obj\Debug\net6.0\ref\Project.BL.dll

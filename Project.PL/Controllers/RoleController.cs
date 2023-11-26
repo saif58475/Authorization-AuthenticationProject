@@ -13,6 +13,7 @@ namespace Project.PL.Controllers
 {
     [Route("api/[controller]")]
     [ApiController]
+    [Authorize(AuthenticationSchemes = JwtBearerDefaults.AuthenticationScheme, Roles = "Super Admin")]
     public class RoleController : ControllerBase
     {
         private readonly IRoleRepository _roleRepository;
@@ -30,7 +31,6 @@ namespace Project.PL.Controllers
         public List<IdentityUser> GetAllUsers() => _roleRepository.GetAllUsers();
 
         [HttpPost("CreateUser")]
-        //[Authorize(AuthenticationSchemes = JwtBearerDefaults.AuthenticationScheme, Roles = "Admin")]
         public async Task<IdentityResult> CreateUser(CreateUserDto user) => await _roleRepository.AddUser(_mapper.Map<IdentityUser>(user));
 
         [HttpPut("UpdateUser")]
@@ -52,6 +52,7 @@ namespace Project.PL.Controllers
 
         #region Login
         [HttpPost("Login")]
+        [AllowAnonymous]
         public async Task<Response<TokenUser>> Login(LoginUser user) => await _roleRepository.Login(user);
         #endregion
 

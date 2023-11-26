@@ -25,10 +25,10 @@ builder.Services.AddDbContext<ProjectDBContext>(options => options.UseSqlServer(
     builder.Configuration.GetConnectionString("DefaultConnection")
     ));
 // this adds the configuration of the Authorization to the project 
-builder.Services.AddAuthorization(options =>
-{
-    options.AddPolicy("Admin", policy => policy.RequireRole("Admin"));
-});
+//builder.Services.AddAuthorization(options =>
+//{
+//    options.AddPolicy("Admin", policy => policy.RequireRole("Admin"));
+//});
 // this adds the configuration of the Authentication to the project 
 builder.Services.AddAuthentication(JwtBearerDefaults.AuthenticationScheme).
     AddJwtBearer(options =>

@@ -30,7 +30,7 @@ namespace Project.PL.Controllers
         public List<IdentityUser> GetAllUsers() => _roleRepository.GetAllUsers();
 
         [HttpPost("CreateUser")]
-        [Authorize(AuthenticationSchemes = JwtBearerDefaults.AuthenticationScheme, Roles = "Admin")]
+        //[Authorize(AuthenticationSchemes = JwtBearerDefaults.AuthenticationScheme, Roles = "Admin")]
         public async Task<IdentityResult> CreateUser(CreateUserDto user) => await _roleRepository.AddUser(_mapper.Map<IdentityUser>(user));
 
         [HttpPut("UpdateUser")]

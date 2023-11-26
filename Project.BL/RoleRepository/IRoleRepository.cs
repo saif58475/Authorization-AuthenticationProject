@@ -31,7 +31,7 @@ namespace Project.BL.RoleRepository
         Task<string> RemoveUserFromRole(string email, string roleName);
 
         Task<IEnumerable<Claim>> GetAllValidClaims(IdentityUser user);
-        Task<string> GenerateTokenString(LoginUser user);
+        Task<string> VerifyAndGenerateToken(LoginUser user);
         Task<Response<TokenUser>> Login(LoginUser user);
     }
 }

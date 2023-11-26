@@ -26,3 +26,17 @@ D:\Authorization & Authentication Structure Project\Authorization & Authenticati
 D:\Authorization & Authentication Structure Project\Authorization & Authentication Structure Project\Project.DAL\obj\Debug\net6.0\Project.DAL.pdb
 D:\Authorization & Authentication Structure Project\Authorization & Authentication Structure Project\Project.DAL\obj\Debug\net6.0\Project.DAL.genruntimeconfig.cache
 D:\Authorization & Authentication Structure Project\Authorization & Authentication Structure Project\Project.DAL\obj\Debug\net6.0\ref\Project.DAL.dll
+D:\seif\BackEnd\Authorization & Authenticatio Structure\Authorization-AuthenticationProject\Project.DAL\bin\Debug\net6.0\Project.DAL.deps.json
+D:\seif\BackEnd\Authorization & Authenticatio Structure\Authorization-AuthenticationProject\Project.DAL\bin\Debug\net6.0\Project.DAL.runtimeconfig.json
+D:\seif\BackEnd\Authorization & Authenticatio Structure\Authorization-AuthenticationProject\Project.DAL\bin\Debug\net6.0\Project.DAL.dll
+D:\seif\BackEnd\Authorization & Authenticatio Structure\Authorization-AuthenticationProject\Project.DAL\bin\Debug\net6.0\Project.DAL.pdb
+D:\seif\BackEnd\Authorization & Authenticatio Structure\Authorization-AuthenticationProject\Project.DAL\obj\Debug\net6.0\Project.DAL.csproj.AssemblyReference.cache
+D:\seif\BackEnd\Authorization & Authenticatio Structure\Authorization-AuthenticationProject\Project.DAL\obj\Debug\net6.0\Project.DAL.GeneratedMSBuildEditorConfig.editorconfig
+D:\seif\BackEnd\Authorization & Authenticatio Structure\Authorization-AuthenticationProject\Project.DAL\obj\Debug\net6.0\Project.DAL.AssemblyInfoInputs.cache
+D:\seif\BackEnd\Authorization & Authenticatio Structure\Authorization-AuthenticationProject\Project.DAL\obj\Debug\net6.0\Project.DAL.AssemblyInfo.cs
+D:\seif\BackEnd\Authorization & Authenticatio Structure\Authorization-AuthenticationProject\Project.DAL\obj\Debug\net6.0\Project.DAL.csproj.CoreCompileInputs.cache
+D:\seif\BackEnd\Authorization & Authenticatio Structure\Authorization-AuthenticationProject\Project.DAL\obj\Debug\net6.0\Project.DAL.dll
+D:\seif\BackEnd\Authorization & Authenticatio Structure\Authorization-AuthenticationProject\Project.DAL\obj\Debug\net6.0\refint\Project.DAL.dll
+D:\seif\BackEnd\Authorization & Authenticatio Structure\Authorization-AuthenticationProject\Project.DAL\obj\Debug\net6.0\Project.DAL.pdb
+D:\seif\BackEnd\Authorization & Authenticatio Structure\Authorization-AuthenticationProject\Project.DAL\obj\Debug\net6.0\Project.DAL.genruntimeconfig.cache
+D:\seif\BackEnd\Authorization & Authenticatio Structure\Authorization-AuthenticationProject\Project.DAL\obj\Debug\net6.0\ref\Project.DAL.dll

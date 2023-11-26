@@ -116,23 +116,13 @@ namespace Project.BL.RoleRepository
         //This will give the token to be authorized all over the application
         public async Task<Response<TokenUser>> Login(LoginUser user)
         {
-            return new Response<TokenUser>() { Message = "Success", StatusCode = StatusCodes.Status200OK, Data = new TokenUser { Token = await this.GenerateTokenString(user) }, Success = true };
-        }
-        //This is the method that generates the token 
-        public async Task<string> GenerateTokenString(LoginUser user)
-        {
-            SymmetricSecurityKey securitykey = new SymmetricSecurityKey(Encoding.UTF8.GetBytes(_config.GetSection("Jwt:Key").Value));
-            SigningCredentials signingCred = new SigningCredentials(securitykey, SecurityAlgorithms.HmacSha512);
-            IEnumerable<Claim> claims = await this.GetAllValidClaims(await _usermanager.FindByEmailAsync(user.Email));
-            JwtSecurityToken securityToken = new JwtSecurityToken(
-                claims: claims,
-                expires: DateTime.Now.AddDays(1),
-                issuer: _config.GetSection("Jwt:Issuer").Value,
-                audience: _config.GetSection("Jwt:Issuer").Value,
-                signingCredentials: signingCred);
-            string tokenString = new JwtSecurityTokenHandler().WriteToken(securityToken);
-
-            return tokenString;
+            return new Response<TokenUser>() 
+            { Message = "Success",
+              StatusCode = StatusCodes.Status200OK, 
+              Data = new TokenUser 
+                         {
+                           Token = await this.VerifyAndGenerateToken(user)
+                         }, Success = true };
         }
         //This will get all the roles and claims related to the user 
         public async Task<IEnumerable<Claim>> GetAllValidClaims(IdentityUser user)
@@ -153,10 +143,10 @@ namespace Project.BL.RoleRepository
 
             foreach (var userRole in userRoles)
             {
-                claims.Add(new Claim("Role", userRole));
                 var role = await _rolemanager.FindByNameAsync(userRole);
                 if(role != null)
                 {
+                    claims.Add(new Claim(ClaimTypes.Role, userRole));
                     var roleClaims = await _rolemanager.GetClaimsAsync(role);
                     foreach(var roleClaim in roleClaims)
                     {
@@ -167,7 +157,22 @@ namespace Project.BL.RoleRepository
             IEnumerable<Claim> ClaimsOfUser = new List<Claim>(claims);
             return ClaimsOfUser;
         }
+        //This is the method that generates the token 
+        public async Task<string> VerifyAndGenerateToken(LoginUser user)
+        {
+            SymmetricSecurityKey securitykey = new SymmetricSecurityKey(Encoding.UTF8.GetBytes(_config.GetSection("Jwt:Key").Value));
+            SigningCredentials signingCred = new SigningCredentials(securitykey, SecurityAlgorithms.HmacSha512);
+            IEnumerable<Claim> claims = await this.GetAllValidClaims(await _usermanager.FindByEmailAsync(user.Email));
+            JwtSecurityToken securityToken = new JwtSecurityToken(
+                claims: claims,
+                expires: DateTime.Now.AddDays(1),
+                issuer: _config.GetSection("Jwt:Issuer").Value,
+                audience: _config.GetSection("Jwt:Issuer").Value,
+                signingCredentials: signingCred);
+            string tokenString = new JwtSecurityTokenHandler().WriteToken(securityToken);
 
+            return tokenString;
+        }
 
     }
 }

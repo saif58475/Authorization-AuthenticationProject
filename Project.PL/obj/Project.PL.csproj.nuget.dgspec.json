@@ -1,24 +1,20 @@
 {
   "format": 1,
   "restore": {
-    "D:\\Authorization & Authentication Structure Project\\Authorization & Authentication Structure Project\\Project.PL\\Project.PL.csproj": {}
+    "D:\\seif\\BackEnd\\Authorization & Authenticatio Structure\\Authorization-AuthenticationProject\\Project.PL\\Project.PL.csproj": {}
   },
   "projects": {
-    "D:\\Authorization & Authentication Structure Project\\Authorization & Authentication Structure Project\\Project.BL\\Project.BL.csproj": {
+    "D:\\seif\\BackEnd\\Authorization & Authenticatio Structure\\Authorization-AuthenticationProject\\Project.BL\\Project.BL.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\Authorization & Authentication Structure Project\\Authorization & Authentication Structure Project\\Project.BL\\Project.BL.csproj",
+        "projectUniqueName": "D:\\seif\\BackEnd\\Authorization & Authenticatio Structure\\Authorization-AuthenticationProject\\Project.BL\\Project.BL.csproj",
         "projectName": "Project.BL",
-        "projectPath": "D:\\Authorization & Authentication Structure Project\\Authorization & Authentication Structure Project\\Project.BL\\Project.BL.csproj",
-        "packagesPath": "C:\\Users\\toshiba\\.nuget\\packages\\",
-        "outputPath": "D:\\Authorization & Authentication Structure Project\\Authorization & Authentication Structure Project\\Project.BL\\obj\\",
+        "projectPath": "D:\\seif\\BackEnd\\Authorization & Authenticatio Structure\\Authorization-AuthenticationProject\\Project.BL\\Project.BL.csproj",
+        "packagesPath": "C:\\Users\\Admin\\.nuget\\packages\\",
+        "outputPath": "D:\\seif\\BackEnd\\Authorization & Authenticatio Structure\\Authorization-AuthenticationProject\\Project.BL\\obj\\",
         "projectStyle": "PackageReference",
-        "fallbackFolders": [
-          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
-        ],
         "configFilePaths": [
-          "C:\\Users\\toshiba\\AppData\\Roaming\\NuGet\\NuGet.Config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+          "C:\\Users\\Admin\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -26,15 +22,14 @@
         ],
         "sources": {
           "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
-          "C:\\Program Files\\dotnet\\library-packs": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
           "net6.0": {
             "targetAlias": "net6.0",
             "projectReferences": {
-              "D:\\Authorization & Authentication Structure Project\\Authorization & Authentication Structure Project\\Project.DAL\\Project.DAL.csproj": {
-                "projectPath": "D:\\Authorization & Authentication Structure Project\\Authorization & Authentication Structure Project\\Project.DAL\\Project.DAL.csproj"
+              "D:\\seif\\BackEnd\\Authorization & Authenticatio Structure\\Authorization-AuthenticationProject\\Project.DAL\\Project.DAL.csproj": {
+                "projectPath": "D:\\seif\\BackEnd\\Authorization & Authenticatio Structure\\Authorization-AuthenticationProject\\Project.DAL\\Project.DAL.csproj"
               }
             }
           }
@@ -82,25 +77,21 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.400\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.403\\RuntimeIdentifierGraph.json"
         }
       }
     },
-    "D:\\Authorization & Authentication Structure Project\\Authorization & Authentication Structure Project\\Project.DAL\\Project.DAL.csproj": {
+    "D:\\seif\\BackEnd\\Authorization & Authenticatio Structure\\Authorization-AuthenticationProject\\Project.DAL\\Project.DAL.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\Authorization & Authentication Structure Project\\Authorization & Authentication Structure Project\\Project.DAL\\Project.DAL.csproj",
+        "projectUniqueName": "D:\\seif\\BackEnd\\Authorization & Authenticatio Structure\\Authorization-AuthenticationProject\\Project.DAL\\Project.DAL.csproj",
         "projectName": "Project.DAL",
-        "projectPath": "D:\\Authorization & Authentication Structure Project\\Authorization & Authentication Structure Project\\Project.DAL\\Project.DAL.csproj",
-        "packagesPath": "C:\\Users\\toshiba\\.nuget\\packages\\",
-        "outputPath": "D:\\Authorization & Authentication Structure Project\\Authorization & Authentication Structure Project\\Project.DAL\\obj\\",
+        "projectPath": "D:\\seif\\BackEnd\\Authorization & Authenticatio Structure\\Authorization-AuthenticationProject\\Project.DAL\\Project.DAL.csproj",
+        "packagesPath": "C:\\Users\\Admin\\.nuget\\packages\\",
+        "outputPath": "D:\\seif\\BackEnd\\Authorization & Authenticatio Structure\\Authorization-AuthenticationProject\\Project.DAL\\obj\\",
         "projectStyle": "PackageReference",
-        "fallbackFolders": [
-          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
-        ],
         "configFilePaths": [
-          "C:\\Users\\toshiba\\AppData\\Roaming\\NuGet\\NuGet.Config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+          "C:\\Users\\Admin\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -108,7 +99,6 @@
         ],
         "sources": {
           "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
-          "C:\\Program Files\\dotnet\\library-packs": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
@@ -170,25 +160,21 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.400\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.403\\RuntimeIdentifierGraph.json"
         }
       }
     },
-    "D:\\Authorization & Authentication Structure Project\\Authorization & Authentication Structure Project\\Project.PL\\Project.PL.csproj": {
+    "D:\\seif\\BackEnd\\Authorization & Authenticatio Structure\\Authorization-AuthenticationProject\\Project.PL\\Project.PL.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\Authorization & Authentication Structure Project\\Authorization & Authentication Structure Project\\Project.PL\\Project.PL.csproj",
+        "projectUniqueName": "D:\\seif\\BackEnd\\Authorization & Authenticatio Structure\\Authorization-AuthenticationProject\\Project.PL\\Project.PL.csproj",
         "projectName": "Project.PL",
-        "projectPath": "D:\\Authorization & Authentication Structure Project\\Authorization & Authentication Structure Project\\Project.PL\\Project.PL.csproj",
-        "packagesPath": "C:\\Users\\toshiba\\.nuget\\packages\\",
-        "outputPath": "D:\\Authorization & Authentication Structure Project\\Authorization & Authentication Structure Project\\Project.PL\\obj\\",
+        "projectPath": "D:\\seif\\BackEnd\\Authorization & Authenticatio Structure\\Authorization-AuthenticationProject\\Project.PL\\Project.PL.csproj",
+        "packagesPath": "C:\\Users\\Admin\\.nuget\\packages\\",
+        "outputPath": "D:\\seif\\BackEnd\\Authorization & Authenticatio Structure\\Authorization-AuthenticationProject\\Project.PL\\obj\\",
         "projectStyle": "PackageReference",
-        "fallbackFolders": [
-          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
-        ],
         "configFilePaths": [
-          "C:\\Users\\toshiba\\AppData\\Roaming\\NuGet\\NuGet.Config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+          "C:\\Users\\Admin\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -196,15 +182,14 @@
         ],
         "sources": {
           "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
-          "C:\\Program Files\\dotnet\\library-packs": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
           "net6.0": {
             "targetAlias": "net6.0",
             "projectReferences": {
-              "D:\\Authorization & Authentication Structure Project\\Authorization & Authentication Structure Project\\Project.BL\\Project.BL.csproj": {
-                "projectPath": "D:\\Authorization & Authentication Structure Project\\Authorization & Authentication Structure Project\\Project.BL\\Project.BL.csproj"
+              "D:\\seif\\BackEnd\\Authorization & Authenticatio Structure\\Authorization-AuthenticationProject\\Project.BL\\Project.BL.csproj": {
+                "projectPath": "D:\\seif\\BackEnd\\Authorization & Authenticatio Structure\\Authorization-AuthenticationProject\\Project.BL\\Project.BL.csproj"
               }
             }
           }
@@ -257,7 +242,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.400\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.403\\RuntimeIdentifierGraph.json"
         }
       }
     }

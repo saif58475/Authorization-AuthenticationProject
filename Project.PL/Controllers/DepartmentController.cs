@@ -42,15 +42,11 @@ namespace Project.PL.Controllers
             return await _departmentRepository.Update(department);
         }
         [HttpGet("GetAll")]
-        public async Task<Response<List<Department>>> GetAll()
-        {
-            return await _departmentRepository.GetAll();
-        }
+        public async Task<Response<List<Department>>> GetAll() => await _departmentRepository.GetAll();
+
         [HttpGet("GetById")]
-        public async Task<Response<Department>> GetById(Guid id)
-        {
-            return await _departmentRepository.GetById(id);
-        }
+        public async Task<Response<Department>> GetById(Guid id) => await _departmentRepository.GetById(id);
+
         [HttpDelete("Delete")]
         public async Task<Response<Department>> Delete(Guid id)
         {

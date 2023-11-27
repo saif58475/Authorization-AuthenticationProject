@@ -25,10 +25,10 @@ builder.Services.AddDbContext<ProjectDBContext>(options => options.UseSqlServer(
     builder.Configuration.GetConnectionString("DefaultConnection")
     ));
 // this adds the configuration of the Authorization to the project 
-//builder.Services.AddAuthorization(options =>
-//{
-//    options.AddPolicy("Admin", policy => policy.RequireRole("Admin"));
-//});
+builder.Services.AddAuthorization(options =>
+{
+    options.AddPolicy("SuperAdmin", policy => policy.RequireRole("Super", "Admin"));
+});
 // this adds the configuration of the Authentication to the project 
 builder.Services.AddAuthentication(JwtBearerDefaults.AuthenticationScheme).
     AddJwtBearer(options =>
@@ -72,7 +72,21 @@ builder.Services.AddSwaggerGen(c =>
         }
     });
 });
-builder.Services.AddIdentity<IdentityUser, IdentityRole>().AddEntityFrameworkStores<ProjectDBContext>();
+
+// ASP.NET Core Identity provides the IdentityUser class and contains properties to store user information such as UserName, PasswordHash
+builder.Services.AddIdentity<IdentityUser, IdentityRole>(options => {
+        //Password Settings
+        options.Password.RequiredLength = 8;
+        options.Password.RequiredUniqueChars = 1;
+        options.Password.RequireUppercase = true;
+        options.Password.RequireLowercase = true;
+        options.Password.RequireNonAlphanumeric = true;
+        options.Password.RequireDigit = true;
+    })
+// We want to store and retrieve the User and Role information of the registered users using EntityFrameWork Core
+// from the underlying SQL Server database. We specify this using AddEntityFrameworkStores<ApplicationDbContext>()
+    .AddEntityFrameworkStores<ProjectDBContext>();
+
 //This that allows the CROS Origins 
 builder.Services.AddCors(options =>
 {
@@ -103,3 +117,8 @@ app.UseCors("Open Server");
 app.MapControllers();
 
 app.Run();
+
+
+#region Alternatives
+//Alternatives: In addition to AddIdentity, there’s also AddIdentityCore, which adds only the core parts of the Identity system, providing a                  more lightweight option if you don’t need the full services like user interface (UI) login functionality.
+#endregion

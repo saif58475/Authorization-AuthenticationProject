@@ -7,13 +7,14 @@ using Microsoft.AspNetCore.Mvc;
 using Project.BL.Response;
 using Project.BL.RoleRepository;
 using Project.DAL.Dtos;
+using System.Data;
 using System.Xml.Linq;
 
 namespace Project.PL.Controllers
 {
     [Route("api/[controller]")]
     [ApiController]
-    [Authorize(AuthenticationSchemes = JwtBearerDefaults.AuthenticationScheme, Roles = "Super Admin")]
+    [Authorize(AuthenticationSchemes = JwtBearerDefaults.AuthenticationScheme, Roles = "Admin")]
     public class RoleController : ControllerBase
     {
         private readonly IRoleRepository _roleRepository;
@@ -35,6 +36,7 @@ namespace Project.PL.Controllers
 
         [HttpPut("UpdateUser")]
         public async Task<IdentityResult> UpdateUser(UpdateUserDto user) => await _roleRepository.UpdateUser(_mapper.Map<IdentityUser>(user));
+        
         [HttpDelete("DeleteUser")]
         public async Task<IdentityResult> DeleteUser(string id) => await _roleRepository.DeleteUser(id);
         #endregion

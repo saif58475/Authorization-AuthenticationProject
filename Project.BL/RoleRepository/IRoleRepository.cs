@@ -26,12 +26,21 @@ namespace Project.BL.RoleRepository
         Task<IdentityResult> DeleteUser(string id);
         #endregion
 
-
+        #region User With Role
         Task<string> AddUserToRole(string email, string roleName);
         Task<string> RemoveUserFromRole(string email, string roleName);
+        #endregion
 
+        #region User With Claim
+        Task<string> AddClaimsToUser(string email, string claimName, string claimValue);
+        Task<string> AddClaimsToRole(string roleName, string claimType, string claimValue);
+        #endregion
+
+
+        #region Authentication & Authorization Methods
         Task<IEnumerable<Claim>> GetAllValidClaims(IdentityUser user);
         Task<string> VerifyAndGenerateToken(LoginUser user);
         Task<Response<TokenUser>> Login(LoginUser user);
+        #endregion
     }
 }

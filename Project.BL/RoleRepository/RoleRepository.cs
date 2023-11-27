@@ -26,26 +26,27 @@ namespace Project.BL.RoleRepository
         private readonly IMapper _mapper;
         private readonly RoleManager<IdentityRole> _rolemanager;
         private readonly UserManager<IdentityUser> _usermanager;
+        private readonly SignInManager<IdentityUser> _signinmanager;
 
         public RoleRepository( ProjectDBContext context
-                             , ILogger<RoleRepository> logger
                              , IConfiguration config
                              , IMapper mapper
                              , RoleManager<IdentityRole> rolemanager
-                             , UserManager<IdentityUser> usermanager)
+                             , UserManager<IdentityUser> usermanager
+                             , SignInManager<IdentityUser> signinmanager )
         {
             _context = context;
-            _logger = logger;
             _config = config;
             _mapper = mapper;
             _rolemanager = rolemanager;
             _usermanager = usermanager;
+            _signinmanager = signinmanager;
         }
 
         #region User
         public List<IdentityUser> GetAllUsers()
         {
-            return _usermanager.Users.ToList();
+            return  _usermanager.Users.ToList();
         }
         public async Task<IdentityResult> AddUser(IdentityUser user)
         {
@@ -113,7 +114,41 @@ namespace Project.BL.RoleRepository
         }
         #endregion
 
-        //This will give the token to be authorized all over the application
+        #region Claim With Role
+        public async Task<string> AddClaimsToUser(string email, string claimName, string claimValue)
+        {
+            try
+            {
+                if (await _usermanager.FindByEmailAsync(email) != null)
+                {
+                    await _usermanager.AddClaimAsync(await _usermanager.FindByEmailAsync(email), new Claim(claimName, claimValue));
+                }
+                return "Claim Created Succefully To The User";
+            }
+            catch (Exception ex) 
+            {
+                return ex.Message;
+            }
+        }
+        public async Task<string> AddClaimsToRole(string roleName, string claimType, string claimValue)
+        {
+            try
+            {
+                if (await _rolemanager.FindByNameAsync(roleName) != null)
+                {
+                    await _rolemanager.AddClaimAsync(await _rolemanager.FindByNameAsync(roleName), new Claim(claimType, claimValue));
+                }
+                return "Claim Created Succefullt To The User";
+            }
+            catch (Exception ex)
+            {
+                return ex.Message;
+            }
+        }
+        #endregion
+
+        #region User Authentication & Authorization Methods
+        //This will give the token to be authenticated & authorized all over the application
         public async Task<Response<TokenUser>> Login(LoginUser user)
         {
             return new Response<TokenUser>() 
@@ -173,6 +208,6 @@ namespace Project.BL.RoleRepository
 
             return tokenString;
         }
-
+        #endregion
     }
 }

@@ -20,11 +20,11 @@ namespace Project.PL.Controllers
         private readonly IRoleRepository _roleRepository;
         private readonly IMapper _mapper;
 
-        public RoleController( IMapper mapper
-                             , IRoleRepository roleRepository )
+        public RoleController(IMapper mapper
+                             , IRoleRepository roleRepository)
         {
             _roleRepository = roleRepository;
-            _mapper = mapper; 
+            _mapper = mapper;
         }
 
         #region user
@@ -32,6 +32,8 @@ namespace Project.PL.Controllers
         public List<IdentityUser> GetAllUsers() => _roleRepository.GetAllUsers();
 
         [HttpPost("CreateUser")]
+        [Authorize(AuthenticationSchemes = JwtBearerDefaults.AuthenticationScheme, Roles = "Super")]
+        [Authorize(AuthenticationSchemes = JwtBearerDefaults.AuthenticationScheme, Roles = "Admin")]
         public async Task<IdentityResult> CreateUser(CreateUserDto user) => await _roleRepository.AddUser(_mapper.Map<IdentityUser>(user));
 
         [HttpPut("UpdateUser")]

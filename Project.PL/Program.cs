@@ -9,7 +9,6 @@ using Project.BL.RoleRepository;
 using Project.BL.UnitOfWork;
 using Project.DAL.AppDBContext;
 using Project.DAL.AutoMapper;
-using Project.DAL.Models;
 using System.Text;
 
 var builder = WebApplication.CreateBuilder(args);
@@ -28,6 +27,7 @@ builder.Services.AddDbContext<ProjectDBContext>(options => options.UseSqlServer(
 builder.Services.AddAuthorization(options =>
 {
     options.AddPolicy("SuperAdmin", policy => policy.RequireRole("Super", "Admin"));
+    options.InvokeHandlersAfterFailure = false;
 });
 // this adds the configuration of the Authentication to the project 
 builder.Services.AddAuthentication(JwtBearerDefaults.AuthenticationScheme).

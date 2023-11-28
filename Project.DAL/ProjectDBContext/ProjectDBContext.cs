@@ -26,6 +26,5 @@ namespace Project.DAL.AppDBContext
         //        return new ProjectDBContext(optionsBuilder.Options);
         //    }
         //}
-        //public DbSet<Department> Departments { get; set; }
     }
 }
